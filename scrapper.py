@@ -20,7 +20,7 @@ add_url = "https://ktu.edu.in"
 url = "https://ktu.edu.in/eu/core/announcements.htm"
 
 # Header footer shown for whatsapp link
-header = " 📢 New *KTU* ktu assist: \n"
+header = " 📢 New *KTU* ktu assista: \n"
 footer2 =  ".\n ------------------------- \n  Countinue reading: *KTU Notification Channel* \n  👉 Join Now!  https://t.me/KTU_RC  \n*Share to your friends* "
 
 # Footer shown for Other messages
