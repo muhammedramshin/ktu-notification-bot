@@ -110,7 +110,7 @@ def send_notification(notification, link_list4):
 
 def find_links(links, body):
     link_list = [InlineKeyboardButton("Goto channel", url=quick_notification_link)]
-    
+     link_list = [InlineKeyboardButton("Goto channel", url=quick_notification_link)]
     for link in links:
         body = remove_last(body, link.text, "", 1)
         if "ktu.edu" in link["href"]:
@@ -167,8 +167,7 @@ def main_function(conn,cur):
         body = body.replace("**","").strip()
         links.append(InlineKeyboardButton("WhatsApp It!", "https://api.whatsapp.com/send?&text=" + urllib.parse.quote(
             body +  footer2)))
-    links.append(InlineKeyboardButton("WhatsApp It!", "https://api.whatsapp.com/send?&text=" + urllib.parse.quote(
-            body +  footer2)))
+    
         if i < 5:
             msg_hash = (hashlib.md5(body.encode('utf-8')).hexdigest())
             msg_list.append(msg_hash)
