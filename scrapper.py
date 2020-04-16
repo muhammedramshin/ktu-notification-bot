@@ -110,7 +110,7 @@ def send_notification(notification, link_list4):
 
 def find_links(links, body):
     link_list = [InlineKeyboardButton("Goto channel", url=quick_notification_link)]
-    link_list.append(InlineKeyboardButton("insta", url=temp_link))
+    
     for link in links:
         body = remove_last(body, link.text, "", 1)
         if "ktu.edu" in link["href"]:
