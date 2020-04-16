@@ -20,8 +20,8 @@ add_url = "https://ktu.edu.in"
 url = "https://ktu.edu.in/eu/core/announcements.htm"
 
 # Header footer shown for whatsapp link
-header = " 📢 New *KTU* notification: \n"
-footer2 =  ".\n ------------------------- \n  Countinue reading: *KTU Notification Channel* \n  👉 Join Now!  https://t.me/ktustudymaterials  \n*Share to your friends* "
+header = " 📢 New *KTU* notification: \n \n"
+footer2 =  ".\n ------------------------- \n For more ktu related updates and study mterials \n  👉 Join Now!  https://t.me/ktustudymaterials  \n* Share to your friends* "
 
 # Footer shown for Other messages
 footer =  "\n ------------------------- \n "
@@ -109,7 +109,8 @@ def send_notification(notification, link_list4):
         log("Message Sent")
 
 def find_links(links, body):
-    link_list = [InlineKeyboardButton("Quick Navigation Panel", url=quick_notification_link)]
+    link_list = [InlineKeyboardButton("Goto channel", url=quick_notification_link)]
+    link_list.append(InlineKeyboardButton("insta", url=temp_link))
     for link in links:
         body = remove_last(body, link.text, "", 1)
         if "ktu.edu" in link["href"]:
