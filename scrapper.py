@@ -118,6 +118,7 @@ def find_links(links, body):
         else:
             temp_link = add_url + link["href"]
         link_list.append(InlineKeyboardButton(link.text, url=temp_link))
+         link_list.append(InlineKeyboardButton(link.text, url=temp_link))
     return body,link_list
 
 def main_function(conn,cur):
