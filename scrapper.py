@@ -15,7 +15,7 @@ debug = True
 # Time  delay it will wake and and check....
 sleep_time =300 #seconds
 
-quick_notification_link = "https://t.me/KTU_RC/14"
+quick_notification_link = "https://t.me/ktustudymaterials"
 add_url = "https://ktu.edu.in"
 url = "https://ktu.edu.in/eu/core/announcements.htm"
 
