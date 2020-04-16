@@ -21,7 +21,7 @@ url = "https://ktu.edu.in/eu/core/announcements.htm"
 
 # Header footer shown for whatsapp link
 header = " 📢 New *KTU* notification: \n"
-footer2 =  ".\n ------------------------- \n  Countinue reading: *KTU Notification Channel* \n  👉 Join Now!  http://t.me/ktustudymaterials  \n*Share to your friends* "
+footer2 =  ".\n ------------------------- \n  Countinue reading: *KTU Notification Channel* \n  👉 Join Now!  https://t.me/ktustudymaterials  \n*Share to your friends* "
 
 # Footer shown for Other messages
 footer =  "\n ------------------------- \n "
