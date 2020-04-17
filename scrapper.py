@@ -24,7 +24,7 @@ header = " 📢 New *KTU* notification: \n \n"
 footer2 =  ".\n \n_For more ktu related updates and study mterials_ \n  👉 Join Now!  https://t.me/ktustudymaterials \n 👉Follow  http://www.instagram.com/ktu_assist \n\n*🕊️Share to your friends* "
 
 # Footer shown for Other messages
-footer =  "\n ------------------------- \n "
+footer =  "\n \n "
 
 # --------------END OF CONFIG--------------------
 
