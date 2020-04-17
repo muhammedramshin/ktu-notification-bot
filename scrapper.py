@@ -21,7 +21,7 @@ url = "https://ktu.edu.in/eu/core/announcements.htm"
 
 # Header footer shown for whatsapp link
 header = " 📢 New *KTU* notification: \n \n"
-footer2 =  ".\n ------------------------- \n _For more ktu related updates and study mterials_ \n  👉 Join Now!  https://t.me/ktustudymaterials \n\n 👉Follow  https://bit.ly/ktu-official \n\n*🕊️Share to your friends* "
+footer2 =  ".\n ------------------------- \n_For more ktu related updates and study mterials_ \n  👉 Join Now!  https://t.me/ktustudymaterials \n\n 👉Follow  https://bit.ly/ktu-official \n\n*🕊️Share to your friends* "
 
 # Footer shown for Other messages
 footer =  "\n ------------------------- \n "
@@ -33,6 +33,7 @@ error_val = ""
 
 bot = telegram.Bot(token=os.environ['BOT_ID'])
 CHANNEL_ID = os.environ['CHANNEL_ID']
+CHANNEL_ID1 = os.environ['CHANNEL_ID1']
 PRIVATE_ID = os.environ['PRIVATE_ID']
 DATABASE_URL = os.environ['DATABASE_URL']
 STATUS = os.environ['STATUS']
@@ -102,6 +103,9 @@ def send_notification(notification, link_list4):
             bot.send_message(chat_id=PRIVATE_ID, text= notification,
                      reply_markup=InlineKeyboardMarkup(build_menu(link_list4, n_cols=2)),
                      disable_web_page_preview=True, parse_mode=telegram.ParseMode.MARKDOWN)
+            bot.send_message(chat_id=CHANNEL_ID1 , text=notification, parse_mode=telegram.ParseMode.MARKDOWN,
+                        reply_markup=InlineKeyboardMarkup(build_menu(link_list4, n_cols=2)),
+                        disable_web_page_preview=True)         
         if not debug:
             bot.send_message(chat_id=CHANNEL_ID , text=notification, parse_mode=telegram.ParseMode.MARKDOWN,
                         reply_markup=InlineKeyboardMarkup(build_menu(link_list4, n_cols=2)),
