@@ -92,9 +92,9 @@ def send_notification(notification, link_list4):
             bot.send_message(chat_id=PRIVATE_ID, text= notification,
                      reply_markup=InlineKeyboardMarkup(build_menu(link_list4, n_cols=2)),
                      disable_web_page_preview=True, parse_mode=telegram.ParseMode.MARKDOWN)
-            bot.send_message(chat_id=CHANNEL_ID1, text= notification,
-                     reply_markup=InlineKeyboardMarkup(build_menu(link_list4, n_cols=2)),
-                     disable_web_page_preview=True, parse_mode=telegram.ParseMode.MARKDOWN)         
+           # bot.send_message(chat_id=CHANNEL_ID1, text= notification,
+           #          reply_markup=InlineKeyboardMarkup(build_menu(link_list4, n_cols=2)),
+           #          disable_web_page_preview=True, parse_mode=telegram.ParseMode.MARKDOWN)         
         if not debug:
             bot.send_message(chat_id=CHANNEL_ID , text=notification, parse_mode=telegram.ParseMode.MARKDOWN,
                         reply_markup=InlineKeyboardMarkup(build_menu(link_list4, n_cols=2)),
@@ -106,9 +106,7 @@ def send_notification(notification, link_list4):
             bot.send_message(chat_id=PRIVATE_ID, text= notification,
                      reply_markup=InlineKeyboardMarkup(build_menu(link_list4, n_cols=2)),
                      disable_web_page_preview=True, parse_mode=telegram.ParseMode.MARKDOWN)
-            bot.send_message(chat_id=CHANNEL_ID1, text= notification,
-                     reply_markup=InlineKeyboardMarkup(build_menu(link_list4, n_cols=2)),
-                     disable_web_page_preview=True, parse_mode=telegram.ParseMode.MARKDOWN)
+            
                      
         if not debug:
             bot.send_message(chat_id=CHANNEL_ID , text=notification, parse_mode=telegram.ParseMode.MARKDOWN,
