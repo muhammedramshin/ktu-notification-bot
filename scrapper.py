@@ -167,7 +167,7 @@ def main_function(conn,cur):
         body = body.replace("**","").strip()
         links.append(InlineKeyboardButton("WhatsApp It!", "https://api.whatsapp.com/send?&text=" + urllib.parse.quote(
             body +  footer2)))
-        links.append(InlineKeyboardButton("checkout", "https://api.whatsapp.com/send?&text="))
+        links.append(InlineKeyboardButton("Instagram", "https://instagram.com/ktu_assist"))
         if i < 5:
             msg_hash = (hashlib.md5(body.encode('utf-8')).hexdigest())
             msg_list.append(msg_hash)
