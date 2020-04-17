@@ -164,7 +164,7 @@ def main_function(conn,cur):
         for x in temmmm.find("li").findAll(text=True):
             body = body +  x
         body , links = find_links(item.findAll('a', href=True), body=body)
-        body = body.replace("**","").strip()
+        body = body.replace("*hhhh*","").strip()
         links.append(InlineKeyboardButton("WhatsApp It!", "https://api.whatsapp.com/send?&text=" + urllib.parse.quote(header +
             body +  footer2)))
         links.append(InlineKeyboardButton("Instagram", "https://instagram.com/ktu_assist"))
