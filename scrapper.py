@@ -163,7 +163,8 @@ def main_function(conn,cur):
                         .replace("<b>","*")\
                             .replace("</b>","*\n\n")\
                                 .replace("[","")\
-                                    .replace("]","")
+                                    .replace("]","")\
+                                        .replace("_", "\\_")
                                    
         temmmm=  BeautifulSoup(contents,'html.parser')   
         body = ""                                  
